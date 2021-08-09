@@ -1,0 +1,12 @@
+<nav class="header">
+    <div class="container">
+        <div class="logo">
+            <a>JM</a>
+        </div>
+        <ul class="menu" >
+            <li *ngFor="let item of items">
+                <app-item [item] = 'item'></app-item>
+            </li>
+        </ul>
+    </div>
+</nav>

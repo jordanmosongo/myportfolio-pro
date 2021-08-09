@@ -1,0 +1,17 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/variables.scss";
+.title {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+  @include flex(column, center, center);
+  &::before {
+    @include title-line($secondary-color);
+    left: -35%;
+  }
+  &::after {
+    @include title-line($secondary-color);
+    right: -35%;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+.about {
+  width: 100%;
+  background-color: $primary-color;
+  .container {
+    width: 90%;
+    padding: 70px 0;
+    margin: auto;
+    @include flex(column, center, center);
+    .infos {
+      width: 80%;
+      @include flex(column, flex-end, center);
+      p {
+        width: 100%;
+        color: #fff;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      button {
+        @include button();
+      }
+    }
+  }
+}

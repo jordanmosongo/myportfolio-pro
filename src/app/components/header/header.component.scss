@@ -1,0 +1,22 @@
+@import "../../sass/mixins.scss";
+.header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: transparent;
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    @include flex(row, center, space-between);
+    .menu {
+      @include flex(row, center, space-between);
+      li {
+        list-style: none;
+        padding: 0 10px;
+      }
+    }
+  }
+}
