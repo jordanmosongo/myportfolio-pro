@@ -1,0 +1,70 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.skill {
+  width: 100%;
+  height: 50rem;
+  .container {
+    width: 80%;
+    height: 100%;
+    padding: 70px 0;
+    margin: auto;
+    @include flex(column, center, center);
+    h2 {
+      @include title($primary-color);
+    }
+    .container__skill {
+      width: 100%;
+      height: 90%;
+      border: 2px solid red;
+      @include flex(row, center, center);
+      .hard {
+        width: 45%;
+        height: 90%;
+        position: relative;
+        .overlay {
+          background-color: $secondary-color;
+          opacity: 0.1;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+        .content {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          @include flex(column, center, center);
+          h3 {
+            color: $secondary-color;
+            font-family: $roboto-regular;
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+          ul {
+            border: 4px solid green;
+            width: 90%;
+            @include flex(column !important, center, center);
+          }
+        }
+      }
+      .soft {
+        width: 45%;
+        height: 100%;
+        position: relative;
+        left: -40px;
+        .overlay {
+          background-color: $primary-color;
+          opacity: 0.3;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+        .content {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

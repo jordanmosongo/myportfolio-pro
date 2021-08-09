@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @mixin flex($direction, $align, $jusify) {
   display: flex;
   flex-direction: $direction;
@@ -10,6 +11,22 @@
   height: 4px;
   background-color: $color;
   position: absolute;
+}
+@mixin title($color) {
+  color: $color;
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: $roboto-regular;
+  @include flex(column, center, center);
+  &::before {
+    @include title-line($secondary-color);
+    left: -35%;
+  }
+  &::after {
+    @include title-line($secondary-color);
+    right: -35%;
+  }
 }
 @mixin button {
   padding: 15px 35px;

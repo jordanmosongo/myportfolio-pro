@@ -18,15 +18,17 @@
       width: 45%;
     }
     .identity {
-      width: 40%;
+      width: 45%;
       text-align: center;
       h1 {
         color: $secondary-color;
-        font-size: 70px;
+        font-size: 80px;
+        font-family: $roboto-bold;
       }
       p {
-        color: $black-color;
-        font-size: 40px;
+        color: rgb(134, 131, 131);
+        font-size: 45px;
+        font-family: $roboto-regular;
       }
     }
   }

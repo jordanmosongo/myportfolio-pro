@@ -13,6 +13,8 @@ import { BComponent } from './exercices/b/b.component';
 import { CComponent } from './exercices/c/c.component';
 import { ItemComponent } from './components/shared/item/item.component';
 import { AboutComponent } from './components/about/about.component';
+import { SkillComponent } from './components/skill/skill.component';
+import { HardskillComponent } from './components/shared/hardskill/hardskill.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { AboutComponent } from './components/about/about.component';
     CComponent,
     ItemComponent,
     AboutComponent,
+    SkillComponent,
+    HardskillComponent,
       
   ],
   imports: [

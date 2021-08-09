@@ -7,7 +7,7 @@ import { Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
  items : String[] = [
-   'Accueil', 'Qui suis-je ?', 'Compétences', 'Services', 'Projets', 'Contact'
+   'Accueil', 'Qui suis-je ?', 'Compétences', 'Services', 'Projets', 'Contact',
  ];
  constructor() {
   

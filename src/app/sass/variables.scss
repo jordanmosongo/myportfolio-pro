@@ -1,3 +1,21 @@
+@font-face {
+  font-family: Roboto-regular;
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-bold;
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+/*
+color variables
+*/
 $primary-color: #3597e5;
 $secondary-color: #f9bb0b;
 $black-color: #3a3628;
+$gray-color: rgb(105, 100, 100);
+$top-skill-color: #f6d373;
+/*
+family variables
+*/
+$roboto-bold: Roboto-bold;
+$roboto-regular: Roboto-regular;

@@ -5,6 +5,7 @@
   font-size: 35px;
   margin-bottom: 30px;
   position: relative;
+  font-family: $roboto-regular;
   @include flex(column, center, center);
   &::before {
     @include title-line($secondary-color);

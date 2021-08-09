@@ -8,7 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TitleComponent implements OnInit {
   @Input() title : String | undefined;
   constructor() { }
-
   ngOnInit(): void {
   }
 
