@@ -15,6 +15,7 @@ import { ItemComponent } from './components/shared/item/item.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { HardskillComponent } from './components/shared/hardskill/hardskill.component';
+import { SoftskillComponent } from './components/shared/softskill/softskill.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { HardskillComponent } from './components/shared/hardskill/hardskill.comp
     AboutComponent,
     SkillComponent,
     HardskillComponent,
+    SoftskillComponent,
       
   ],
   imports: [

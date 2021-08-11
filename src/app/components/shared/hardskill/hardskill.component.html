@@ -1,7 +1,9 @@
-    <li class="skill" *ngFor = 'let skill of skills'> 
-        <div class="skill__head">
-            <span>{{skill.percentage}}</span>
-        </div>
-        <h4>{{skill.name}}</h4>
-    </li>
+    <ul>
+        <li class="item" *ngFor = 'let skill of skills'> 
+            <div class="item__head">
+                <img src={{skill.image}} alt={{skill.name}}/>
+            </div>
+            <span>{{skill.name}}</span>
+        </li>
+    </ul>
 

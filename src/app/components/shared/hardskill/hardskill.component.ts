@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hardskill',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hardskill.component.scss']
 })
 export class HardskillComponent implements OnInit {
-  @Input() skills :{name : String, percentage : String}[] | undefined;
+  @Input() skills : {name : String, image : String}[] | undefined;
   constructor() { }
 
   ngOnInit(): void {

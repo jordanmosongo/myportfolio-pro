@@ -1,46 +1,51 @@
 @import "../../../sass/mixins.scss";
 @import "../../../sass/variables.scss";
 
-.skill {
-  border: 1px solid red;
-  width: 160px;
-  height: 200px;
-  list-style: none;
-  @include flex(column, center, space-between);
-  .skill__head {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 7px solid $secondary-color;
-    border-top-color: $top-skill-color;
-    position: relative;
-    @include flex(row, center, center);
-    &::after {
-      position: absolute;
-      bottom: -40px;
-      content: "";
-      width: 7px;
-      height: 40px;
-      background-color: $secondary-color;
-    }
-    &::before {
-      position: absolute;
-      bottom: -55px;
-      content: "";
-      width: 20px;
-      height: 20px;
+ul {
+  width: 90%;
+  margin: auto;
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  .item {
+    width: 33%;
+    height: 200px;
+    margin-bottom: 20px;
+    list-style: none;
+    @include flex(column, center, space-between);
+    .item__head {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      background-color: $secondary-color;
+      border: 7px solid $secondary-color;
+      border-top-color: $top-skill-color;
+      position: relative;
+      @include flex(row, center, center);
+      &::after {
+        position: absolute;
+        bottom: -40px;
+        content: "";
+        width: 7px;
+        height: 40px;
+        background-color: $secondary-color;
+      }
+      &::before {
+        position: absolute;
+        bottom: -55px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+      }
+      img {
+        width: 70%;
+      }
     }
     span {
       font-family: $roboto-regular;
-      font-size: 35px;
+      font-size: 22px;
       color: $gray-color;
+      text-align: center;
     }
-  }
-  h4 {
-    font-family: $roboto-regular;
-    font-size: 20px;
-    color: $gray-color;
   }
 }
