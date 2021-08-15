@@ -1,7 +1,7 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
 
-.about {
+.service {
   .upshape {
     width: 100%;
     position: absolute;
@@ -21,28 +21,12 @@
       width: 105%;
     }
   }
-  width: 100%;
   background-color: $primary-color;
   position: relative;
-  .block {
+  .container {
+    //width: 90%;
     padding: 20px 0;
     margin: auto;
     @include flex(column, center, center);
-    .infos {
-      width: 80%;
-      @include flex(column, flex-end, center);
-      p {
-        width: 100%;
-        color: #fff;
-        font-family: $roboto-regular;
-        font-size: 25px;
-        line-height: 45px;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      button {
-        @include button($roboto-bold, 24px, $primary-color, #3675a8);
-      }
-    }
   }
 }

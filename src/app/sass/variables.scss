@@ -1,11 +1,16 @@
 @font-face {
-  font-family: Roboto-regular;
-  src: url("../../assets/fonts/Roboto-Regular.ttf");
+  font-family: Berkshire;
+  src: url("../../assets/fonts/BerkshireSwash-Regular.ttf");
 }
 @font-face {
-  font-family: Roboto-bold;
-  src: url("../../assets/fonts/Roboto-Bold.ttf");
+  font-family: DMSans-regular;
+  src: url("../../assets/fonts/DMSans-Regular.ttf");
 }
+@font-face {
+  font-family: DMSans-bold;
+  src: url("../../assets/fonts/DMSans-Bold.ttf");
+}
+
 /*
 color variables
 */
@@ -17,5 +22,6 @@ $top-skill-color: #f6d373;
 /*
 family variables
 */
-$roboto-bold: Roboto-bold;
-$roboto-regular: Roboto-regular;
+$roboto-bold: DMSans-bold;
+$roboto-regular: DMSans-regular;
+$logo-font: Berkshire;

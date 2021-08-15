@@ -1,11 +1,13 @@
-<nav class="header">
-    <div class="container">
+<nav class="header" [ngClass] = "{'header-on-scroll' : isHeaderOnScroll}">
+    <div class="block">
         <div class="logo">
-            <a>JM</a>
+            <a href="/">JM</a>
         </div>
         <ul class="menu" >
-            <li *ngFor="let item of items">
-                <app-item [item] = 'item'></app-item>
+            <li *ngFor="let item of items; let index = index" >
+                <a [href]='item?.linkTo' 
+                [ngClass] = "{'active' : index == selectedItemIndex}" 
+                (click)="onSelect(index)" >{{item?.name}}</a>
             </li>
         </ul>
     </div>

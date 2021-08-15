@@ -1,0 +1,25 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/variables.scss";
+.container {
+  width: 75vw;
+  @include flex(row, center, space-between);
+  .card {
+    width: 32%;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 27px #3675a8;
+    @include flex(column, center, center);
+    h3 {
+      font-family: $roboto-bold;
+      font-size: 30px;
+      color: $primary-color;
+    }
+    p {
+      font-family: $roboto-regular;
+      font-size: 28px;
+      line-height: 32px;
+      color: $black-color;
+    }
+  }
+}

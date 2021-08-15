@@ -4,12 +4,7 @@
   height: 100vh;
   width: 100%;
   @include flex(row, center, center);
-  .ellipse {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .container {
+  .block {
     width: 90%;
     height: 80%;
     margin: auto;
@@ -19,16 +14,30 @@
     }
     .identity {
       width: 45%;
-      text-align: center;
+      height: inherit;
+      position: relative;
+      .back-image {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+        background-image: url("../../../assets/images/shape/ellipse.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      @include flex(column, center, center);
       h1 {
         color: $secondary-color;
-        font-size: 80px;
+        font-size: 70px;
         font-family: $roboto-bold;
+        font-weight: bolder;
+        z-index: 2;
       }
       p {
         color: rgb(134, 131, 131);
-        font-size: 45px;
+        font-size: 40px;
         font-family: $roboto-regular;
+        z-index: 2;
       }
     }
   }

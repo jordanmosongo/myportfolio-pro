@@ -28,14 +28,26 @@
     right: -35%;
   }
 }
-@mixin button {
-  padding: 15px 35px;
-  border-radius: 25px;
+@mixin button($family, $size, $color, $shadow) {
   background-color: #fff;
-  color: $primary-color;
-  font-size: 30px;
-  cursor: pointer;
   border: 0;
+  border-radius: 25px;
+  box-shadow: 0 4px 27px $shadow;
+  color: $color;
+  cursor: pointer;
+  font-family: $family;
+  font-size: $size;
+  padding: 15px 25px;
   outline: none;
-  box-shadow: 0 4px 27px #3675a8;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 35px $shadow;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@mixin basicLinkStyle($family, $size, $color) {
+  font-family: $family;
+  font-size: $size;
+  text-decoration: none;
+  color: $color;
 }
