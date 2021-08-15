@@ -1,11 +1,17 @@
-<section class="service">    
+<section class="service"> 
+    <div class="service__container">
+        <app-title [title] = 'title'></app-title>
+        <div class="card__container">            
+            <div class="card" *ngFor = "let service of services">
+                <div class="icon">{{service?.icon}}</div>
+                <h3>{{service?.name}}</h3>
+                <p>{{service?.description}}</p>
+            </div>
+        </div>
+    </div>
     <div class="upshape">
         <img src="../../../assets/images/shape/down.svg" alt="">                   
-    </div>              
-    <div class="container">
-        <app-title [title] = 'title'></app-title>
-        <app-card-service></app-card-service>
-    </div>
+    </div>  
     <div class="downshape">
         <img src="../../../assets/images/shape/up.svg" alt="">                   
     </div>

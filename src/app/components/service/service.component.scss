@@ -23,10 +23,33 @@
   }
   background-color: $primary-color;
   position: relative;
-  .container {
-    //width: 90%;
+  .service__container {
+    width: 90%;
     padding: 20px 0;
     margin: auto;
     @include flex(column, center, center);
+    .card__container {
+      @include flex(row, center, space-evenly);
+      width: 80%;
+      .card {
+        width: 32%;
+        padding: 20px 0;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 4px 27px #3675a8;
+        @include flex(column, center, center);
+        h3 {
+          font-family: $roboto-bold;
+          font-size: 30px;
+          color: $primary-color;
+        }
+        p {
+          font-family: $roboto-regular;
+          font-size: 24px;
+          line-height: 32px;
+          color: $black-color;
+        }
+      }
+    }
   }
 }

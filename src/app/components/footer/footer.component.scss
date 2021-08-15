@@ -1,0 +1,16 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+footer {
+  padding: 20px 0;
+  @include flex(column, center, center);
+  background-color: $black-color;
+  p {
+    font-size: 20px;
+    font-family: $roboto-regular;
+    color: #fff;
+    margin: 0;
+  }
+  .owner {
+    color: $secondary-color;
+  }
+}

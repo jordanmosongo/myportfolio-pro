@@ -1,0 +1,79 @@
+<div class="contact">
+    <div class="downshape">
+        <img src="../../../assets/images/shape/contactshape.svg" alt="">                   
+    </div>
+    <div class="contact__container">
+        <h2>{{title}}</h2>
+        <div class="row">
+            <div class="col-md-6 infos">
+                <p>
+                    Merci d’être intéressé à mon profil. N'hésitez pas 
+                    de me rejoindre sur les réseaux sociaux, de 
+                    m'appeler en cas de besoin, de me laisser un 
+                    message ou de souscrire à la plateforme d'apprentissage G-soft
+                </p>
+                <ul>
+                    <li>
+                        <address>Kinshasa/Kimbanseke</address>
+                    </li>
+                    <li>
+                        <a href="Tel">+243 815 392 056</a>
+                    </li>
+                    <li>
+                        <a href="Tel">+243 975 931 859</a>
+                    </li>
+                    <li>
+                        <a href="mailTo">mosongojordan@gmai.com</a>
+                    </li>
+                </ul>
+                <h3>Retrouvez-moi aussi sur </h3>
+            </div>
+            <div class="col-md-6 message">
+                <h3>Laissez-moi un message</h3>
+                <form [formGroup] = 'contactForm' (ngSubmit) = 'onSubmitForm()'>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="md-form md-outline form-lg">
+                                <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'name'>
+                                <label for="form-lg">Nom</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="md-form md-outline form-lg">
+                                <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'lastName'>
+                                <label for="form-lg">Prénom</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="md-form md-outline form-lg">
+                                <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'phone'>
+                                <label for="form-lg">Téléphone</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="md-form md-outline form-lg">
+                                <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'email'>
+                                <label for="form-lg">E-mail</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'subject'>
+                                <label for="form-lg">Sujet</label>
+                            </div>
+                            <div class="md-form md-outline form-lg">
+                                <textarea id="form-lg" class="form-control form-control-lg" type="text" mdbInput formControlName = 'message'></textarea>
+                                <label for="form-lg">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

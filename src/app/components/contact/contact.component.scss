@@ -1,0 +1,58 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+.contact {
+  width: 100%;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 50px 0;
+  .downshape {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: -70px;
+    overflow: hidden;
+    img {
+      width: 105%;
+    }
+  }
+  .contact__container {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    @include flex(column, center, center);
+    h2 {
+      @include title($primary-color);
+    }
+    .infos {
+      padding: 0 10px;
+      p {
+        font-size: 20px;
+        font-family: $roboto-regular;
+      }
+      li {
+        margin-left: 20px;
+        list-style: none;
+        font-size: 20px;
+        font-family: $roboto-regular;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .message {
+      form {
+        button {
+          @include button(
+            $roboto-regular,
+            24px,
+            $primary-color,
+            rgb(189, 184, 184)
+          );
+          padding-top: 7px;
+          padding-bottom: 7px;
+        }
+      }
+    }
+  }
+}

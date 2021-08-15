@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MDBBootstrapModule} from 'angular-bootstrap-md'
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,9 @@ import { SoftskillComponent } from './components/shared/softskill/softskill.comp
 import { ServiceComponent } from './components/service/service.component';
 import { CardProjectComponent } from './components/shared/card-project/card-project.component';
 import { CardServiceComponent } from './components/shared/card-service/card-service.component';
+import { ProjectComponent } from './components/project/project.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -39,11 +43,15 @@ import { CardServiceComponent } from './components/shared/card-service/card-serv
     ServiceComponent,
     CardProjectComponent,
     CardServiceComponent,
+    ProjectComponent,
+    ContactComponent,
+    FooterComponent,
       
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
