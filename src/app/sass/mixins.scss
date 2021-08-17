@@ -7,7 +7,7 @@
 }
 @mixin title-line($color) {
   content: "";
-  width: 25%;
+  width: 30px;
   height: 4px;
   background-color: $color;
   position: absolute;
@@ -17,15 +17,15 @@
   font-size: 35px;
   margin-bottom: 30px;
   position: relative;
-  font-family: $roboto-regular;
+  font-family: $roboto-bold;
   @include flex(column, center, center);
   &::before {
     @include title-line($secondary-color);
-    left: -35%;
+    left: -20%;
   }
   &::after {
     @include title-line($secondary-color);
-    right: -35%;
+    right: -20%;
   }
 }
 @mixin button($family, $size, $color, $shadow) {
@@ -42,7 +42,7 @@
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 35px $shadow;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 }
 @mixin basicLinkStyle($family, $size, $color) {

@@ -1,12 +1,23 @@
 <section class="service"> 
     <div class="service__container">
-        <app-title [title] = 'title'></app-title>
-        <div class="card__container">            
-            <div class="card" *ngFor = "let service of services">
-                <div class="icon">{{service?.icon}}</div>
-                <h3>{{service?.name}}</h3>
-                <p>{{service?.description}}</p>
+        <h2>{{title}}</h2>
+        <div class="card__container"> 
+            <div class="card">
+                <i class="fas fa-diagnoses"></i>
+                <h3>{{services[0]?.name}}</h3>
+                <p>{{services[0]?.description}}</p>
+            </div>           
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>{{services[1]?.name}}</h3>
+                <p>{{services[1]?.description}}</p>
             </div>
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>{{services[2]?.name}}</h3>
+                <p>{{services[2]?.description}}</p>
+            </div>         
+            
         </div>
     </div>
     <div class="upshape">

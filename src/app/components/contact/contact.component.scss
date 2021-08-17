@@ -30,13 +30,26 @@
         font-family: $roboto-regular;
       }
       li {
-        margin-left: 20px;
         list-style: none;
         font-size: 20px;
         font-family: $roboto-regular;
-        a {
+        @include flex(row, center, flex-start);
+        a,
+        address {
           text-decoration: none;
           color: black;
+          margin-left: 20px;
+        }
+      }
+      .social-links {
+        @include flex(row, center, flex-start);
+        li {
+          list-style: none;
+          margin-right: 20px;
+          i {
+            font-size: 35px;
+            color: $secondary-color;
+          }
         }
       }
     }

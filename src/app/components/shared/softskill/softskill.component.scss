@@ -1,33 +1,10 @@
 @import "../../../sass/mixins.scss";
 @import "../../../sass/variables.scss";
 li {
-  list-style: none;
+  list-style: square;
   font-family: $roboto-regular;
   font-size: 24px;
   color: $gray-color;
   margin-bottom: 40px;
-  @include flex(row, center, flex-start);
-  .icon {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    border: 1px solid red;
-    i {
-      color: red;
-      font-size: 20px;
-    }
-    @include flex(row, center, center);
-    &::after {
-      content: "";
-      width: 4px;
-      height: 30px;
-      background-color: $primary-color;
-      position: absolute;
-      top: 45px;
-    }
-  }
-  span {
-    margin-left: 20px;
-  }
+  margin-left: 40px;
 }

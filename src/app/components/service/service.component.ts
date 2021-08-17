@@ -6,22 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
-  title : String = 'Services';
+  title : String = 'Mes Services';
   services :{name : String, icon: String, description : String }[] = [
     {
-      name : 'Programmation',
+      name : 'Analyse et conception',
       icon : 'Icon',
-      description : 'just wait a sec'
+      description : 'Développement des applications de qualité répondant à vos exigences'
     },
     {
-      name : 'Programmation',
-      icon : 'Icon',
-      description : 'just wait a sec'
+      name : 'programmation web mobile',
+      icon : `<i class="fas fa-code"></i>`,
+      description : 'Développement des applications sur mesure et des projets à impact social'
     },
     {
-      name : 'Programmation',
+      name : 'UX et UI',
       icon : 'Icon',
-      description : 'just wait a sec'
+      description : 'Développement des applications de qualité répondant à vos exigences'
     },
 
   ];
