@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
      window.onscroll = () => {
         let scrollPoint = document.body.scrollTop || 
         document.documentElement.scrollTop;        
-        this.isHeaderOnScroll = scrollPoint > 170 ? true : false;
+        this.isHeaderOnScroll = scrollPoint > 120 ? true : false;
       }
   }
   onSelect(index : number){

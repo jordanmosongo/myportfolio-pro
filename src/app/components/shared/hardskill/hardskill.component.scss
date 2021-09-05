@@ -48,4 +48,35 @@ ul {
       text-align: center;
     }
   }
+  @media (max-width: 768px) {
+    width: 95%;
+    //border: 2px solid red;
+    .item {
+      height: 150px;
+      .item__head {
+        width: 80px;
+        height: 80px;
+        border: 3px solid $secondary-color;
+        &::after {
+          bottom: -30px;
+          width: 3px;
+          height: 30px;
+          background-color: $secondary-color;
+        }
+        &::before {
+          bottom: -35px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $secondary-color;
+        }
+        img {
+          width: 75%;
+        }
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
 }

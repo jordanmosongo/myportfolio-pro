@@ -11,6 +11,9 @@
   height: 4px;
   background-color: $color;
   position: absolute;
+  @media (max-width: 768px) {
+    width: 22px;
+  }
 }
 @mixin title($color) {
   color: $color;
@@ -26,6 +29,10 @@
   &::after {
     @include title-line($secondary-color);
     right: -20%;
+  }
+  @media (max-width: 768px) {
+    font-size: 27px;
+    margin-bottom: 15px;
   }
 }
 @mixin button($family, $size, $color, $shadow) {
@@ -50,4 +57,20 @@
   font-size: $size;
   text-decoration: none;
   color: $color;
+}
+@mixin movingService($pixel) {
+  @keyframes moveService {
+    0% {
+      transform: translateY($pixel);
+      transition: 0.7s ease;
+    }
+    50% {
+      transform: translateY(0);
+      transition: 0.7s ease;
+    }
+    100% {
+      transform: translateY($pixel);
+      transition: 0.7s ease;
+    }
+  }
 }

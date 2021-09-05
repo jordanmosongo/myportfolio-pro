@@ -15,7 +15,9 @@
     .card__container {
       @include flex(row, center, space-between);
       width: 80%;
-      .card {
+      .first-card,
+      .second-card,
+      .third-card {
         width: 32%;
         padding: 20px 0;
         background-color: #fff;
@@ -39,6 +41,18 @@
           color: $black-color;
           text-align: center;
         }
+      }
+      .first-card {
+        animation: moveService 2s ease-in-out 2.5s infinite;
+        @include movingService(4px);
+      }
+      .second-card {
+        animation: moveService 2.5s ease-in 2s infinite;
+        @include movingService(7px);
+      }
+      .third-card {
+        animation: moveService 2s ease-in-out 2.5s infinite;
+        @include movingService(4px);
       }
     }
   }

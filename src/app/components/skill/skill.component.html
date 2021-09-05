@@ -1,22 +1,18 @@
 <div class="skill">
-    <div class="skill__container">
-        <h2>Compétences</h2>
-        <div class="container__skill">
-            <div class="hard">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>Hardskills</h3>                    
-                    <app-hardskill [skills] = 'skills'></app-hardskill>
-                </div>
+    <h2 class="skill__title">Compétences</h2>
+    <div class="skill__container row">
+        <div class="col-md-6 hard">
+            <div class="overlay"></div>
+            <div class="content">                               
+                <app-hardskill [skills] = 'skills'></app-hardskill>
             </div>
-            <div class="soft">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>SoftSkills</h3>
-                    <ul>
-                        <app-softskill [skills]='softSkills'></app-softskill>
-                    </ul>                   
-                </div>
+        </div>
+        <div class="col-md-6 soft">
+            <div class="overlay"></div>
+            <div class="content">
+                <ul>
+                    <app-softskill [skills]='softSkills'></app-softskill>
+                </ul>                   
             </div>
         </div>
     </div>

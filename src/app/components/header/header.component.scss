@@ -2,7 +2,7 @@
 @import "../../sass/variables.scss";
 
 .header {
-  height: 10vh;
+  height: 12vh;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,16 +12,23 @@
   .block {
     height: 100%;
     margin: auto;
-    width: 90%;
+    width: 80%;
     @include flex(row, center, space-between);
     .logo {
       a {
-        @include basicLinkStyle($roboto-bold, 35px, $primary-color);
+        //@include basicLinkStyle($roboto-bold, 35px, $primary-color);
         font-weight: bold;
+        color: transparent;
       }
+    }
+    .mobile-menu {
+      color: $primary-color;
+      font-size: 25px;
+      display: none;
     }
     .menu {
       height: 100%;
+
       @include flex(row, flex-start, space-between);
       li {
         list-style: none;
@@ -49,11 +56,23 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .block {
+      width: 90%;
+      .menu {
+        display: none;
+      }
+      .mobile-menu {
+        display: inherit;
+      }
+    }
+  }
 }
 .header-on-scroll {
   background-color: #fff;
-  box-shadow: 0 1px 1px #b3cde2;
-  height: 8vh;
+  box-shadow: 0 1px 4px #7e8183;
+  height: 10vh;
   opacity: 0.97;
   transition: all 0.8s ease-in-out;
 }
+//responsive
