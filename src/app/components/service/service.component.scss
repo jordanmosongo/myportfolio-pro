@@ -6,7 +6,7 @@
   position: relative;
   .service__container {
     width: 90%;
-    padding: 20px 0;
+    padding: 50px 0;
     margin: auto;
     @include flex(column, center, center);
     h2 {
@@ -56,23 +56,48 @@
       }
     }
   }
-  .upshape {
+  .upshape,
+  .downshape {
     width: 100%;
     position: absolute;
-    bottom: -70px;
+    bottom: calc(-17%);
     overflow: hidden;
     img {
       width: 105%;
     }
   }
   .downshape {
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    top: -70px;
-    overflow: hidden;
-    img {
-      width: 105%;
+    top: calc(-17%);
+  }
+  @media (max-width: 768px) {
+    .service__container {
+      padding: 20px 0;
+      .card__container {
+        width: 100%;
+        flex-direction: column;
+        .first-card,
+        .second-card,
+        .third-card {
+          width: 100%;
+          margin: 8px 0;
+          i {
+            font-size: 25px;
+            margin-bottom: 10px;
+          }
+          h3 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .downshape {
+      top: calc(-2%);
+    }
+    .upshape {
+      bottom: calc(-2%);
     }
   }
 }

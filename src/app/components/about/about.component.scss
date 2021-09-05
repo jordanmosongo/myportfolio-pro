@@ -2,7 +2,11 @@
 @import "../../sass/mixins.scss";
 
 .about {
-  .upshape {
+  width: 100%;
+  background-color: $primary-color;
+  position: relative;
+  .upshape,
+  .downshape {
     width: 100%;
     position: absolute;
     bottom: calc(-25%);
@@ -12,18 +16,8 @@
     }
   }
   .downshape {
-    width: 100%;
-    margin: auto;
-    position: absolute;
     top: calc(-25%);
-    overflow: hidden;
-    img {
-      width: 105%;
-    }
   }
-  width: 100%;
-  background-color: $primary-color;
-  position: relative;
   .block {
     width: 80%;
     padding: 20px 0;
