@@ -7,38 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
   title : String = 'Projets réalisés';
-  cards = [
+  projects = [
     {
-      title: 'Card Title 1',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      name : "Kinshasa digitale",
+      image :"assets/images/realisations/kda.png",
+      description : "Un projet mis en place pour la kd",
+      technos : [
+        'html', 'css', 'javascript'
+      ],
+      link : 'lien vers le site'
     },
     {
-      title: 'Card Title 2',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
+      name : "Lukafilms",
+      image :"assets/images/realisations/kda.png",
+      description : "Un projet mis en place pour la kd",
+      technos : [
+        'html', 'css', 'javascript'
+      ],
+      link : 'lien vers le site'
     },
     {
-      title: 'Card Title 3',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
-    },
-  ];
-  slides: any = [[]];
-  chunk(arr : any, chunkSize : number) {
-    let R = [];
-    for (let i = 0, len = arr.length; i < len; i += chunkSize) {
-      R.push(arr.slice(i, i + chunkSize));
+      name : "ECMD-O",
+      image :"assets/images/realisations/ecmd-o.png",
+      description : "Un projet mis en place pour la kd",
+      technos : [
+        'html', 'css', 'javascript'
+      ],
+      link : 'lien vers le site'
     }
-    return R;
-  }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
-    this.slides = this.chunk(this.cards, 3);
+
   }
 
 }

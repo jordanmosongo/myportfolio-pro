@@ -1,24 +1,20 @@
 <div class="project">
     <div class="project__container">
         <h2>Projets réalisés</h2>
-        <mdb-carousel [isControls]="true" class="carousel-multi-item single-animation" [type]="'carousel-multi-item'"
-              [animation]="'slide'">
-            <mdb-carousel-item *ngFor="let item of slides; let i = index">
-                <div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
-                    <mdb-card class="my-1">
-                        <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
-                        <mdb-card-body class="body">
-                        <mdb-card-title>
-                            <h4>{{card.title}}</h4>
-                        </mdb-card-title>
-                        <p>{{card.description}}</p>  
-                     </mdb-card-body>
-                        <ul>                            
-                        </ul> 
-                        <a href="#" mdbBtn mdbWavesEffect>Accéder</a>
-                    </mdb-card>
+        <div class="card__container">
+            <div class="card__project" *ngFor="let project of projects">
+                <div class="image">
+                    <img [src]="project.image" alt="">
                 </div>
-            </mdb-carousel-item>
-            </mdb-carousel>
+                <div class="description">
+                    <h3>{{project.name}}</h3>
+                    <p>{{project.description}}</p>
+                </div>
+                <div class="action">
+                    <div class="techno"></div>                    
+                    <a href="" class="link">Accéder</a>                    
+                </div>
+            </div>                  
+        </div>
     </div>
 </div>
