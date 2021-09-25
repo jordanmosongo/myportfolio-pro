@@ -16,18 +16,37 @@ export class HeaderComponent implements OnInit {
  ];
  selectedItemIndex : number = 0;
  isHeaderOnScroll : boolean = false;
+ isMobileMenuClicked : boolean = false;
+ isMobileMenu : boolean= false;
+ isMenuHidden : boolean = true;
  constructor() {
   
   }
    ngOnInit(): void {
      window.onscroll = () => {
         let scrollPoint = document.body.scrollTop || 
-        document.documentElement.scrollTop;        
-        this.isHeaderOnScroll = scrollPoint > 120 ? true : false;
+        document.documentElement.scrollTop; 
+        if(window.innerWidth > 768){
+          this.isHeaderOnScroll = scrollPoint > 120 ? true : false;
+        } else{
+          this.isHeaderOnScroll = scrollPoint > 30 ? true : false;
+        }   
+        
       }
   }
   onSelect(index : number){
     this.selectedItemIndex = index;
-  } 
+    } 
+  onShowOrHideMobileMenu(){
+    if(this.isMobileMenu){
+      this.isMenuHidden = !this.isMenuHidden;
+      setTimeout(()=>{
+        this.isMobileMenu = !this.isMobileMenu;        
+      }, 1200);
+    }else{
+      this.isMobileMenu = !this.isMobileMenu;
+      this.isMenuHidden = !this.isMenuHidden;
+    }
+  }
 
 }

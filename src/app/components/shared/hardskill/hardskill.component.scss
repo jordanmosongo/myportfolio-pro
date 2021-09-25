@@ -4,7 +4,7 @@
 ul {
   width: 90%;
   margin: auto;
-  @include flex(row, space-between, center);
+  @include flex(row, center, center);
   flex-wrap: wrap;
   .item {
     width: 33%;
@@ -50,7 +50,6 @@ ul {
   }
   @media (max-width: 768px) {
     width: 95%;
-    //border: 2px solid red;
     .item {
       height: 150px;
       .item__head {

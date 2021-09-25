@@ -39,22 +39,14 @@
     margin: 0;
     .skill__container {
       width: 100%;
-      .hard,
-      .soft {
+      .hard {
         padding: 20px 0;
         .overlay {
           background-color: transparent;
         }
       }
-      .hard {
-        padding: 20px 0;
-      }
       .soft {
-        left: 0;
-        .overlay {
-          background-color: $primary-color;
-          opacity: 0.02;
-        }
+        display: none;
       }
     }
   }
