@@ -69,6 +69,17 @@
   .downshape {
     top: calc(-17%);
   }
+  @media (max-width: 1280px) {
+    .service__container {
+      padding: 20px 0;
+    }
+    .upshape {
+      bottom: calc(-8.5%);
+    }
+    .downshape {
+      top: calc(-8.5%);
+    }
+  }
   @media (max-width: 768px) {
     .service__container {
       padding: 20px 0;
@@ -93,11 +104,22 @@
         }
       }
     }
+    .upshape {
+      bottom: calc(-4.2%);
+    }
     .downshape {
-      top: calc(-2%);
+      top: calc(-4.2%);
+    }
+  }
+  @media (max-width: 540px) {
+    .service__container {
+      padding: 20px 0;
     }
     .upshape {
-      bottom: calc(-2%);
+      bottom: calc(-2.5%);
+    }
+    .downshape {
+      top: calc(-2.5%);
     }
   }
 }

@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
       this.isMenuHidden = !this.isMenuHidden;
       setTimeout(()=>{
         this.isMobileMenu = !this.isMobileMenu;        
-      }, 1200);
+      }, 500);
     }else{
       this.isMobileMenu = !this.isMobileMenu;
       this.isMenuHidden = !this.isMenuHidden;

@@ -43,7 +43,30 @@
       }
     }
   }
+
+  @media (max-width: 1280px) {
+    .block {
+      width: 80%;
+    }
+    .upshape {
+      bottom: calc(-12.5%);
+    }
+    .downshape {
+      top: calc(-12.5%);
+    }
+  }
   @media (max-width: 768px) {
+    .block {
+      width: 80%;
+    }
+    .upshape {
+      bottom: calc(-6.8%);
+    }
+    .downshape {
+      top: calc(-6.8%);
+    }
+  }
+  @media (max-width: 540px) {
     .block {
       width: 95%;
     }

@@ -35,17 +35,41 @@
       }
     }
   }
+  @media (max-width: 1280px) {
+    .skill__container {
+      width: 80%;
+      .hard {
+        padding: 50px 0;
+      }
+      .soft {
+        padding: 50px 0;
+      }
+    }
+  }
   @media (max-width: 768px) {
     margin: 0;
     .skill__container {
       width: 100%;
+      @include flex(row, center, center);
       .hard {
+        width: 90% !important;
         padding: 20px 0;
         .overlay {
           background-color: transparent;
         }
       }
       .soft {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 540px) {
+    height: 65vh;
+    .block {
+      img {
+        width: 100%;
+      }
+      .identity {
         display: none;
       }
     }

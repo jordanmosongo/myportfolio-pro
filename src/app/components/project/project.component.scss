@@ -1,92 +1,109 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
-.project {
+
+section {
   width: 100%;
-  margin: 75px 0;
-  .project__container {
+  padding: 70px 0;
+  margin: 70px 0;
+  @include flex(column, center, center);
+  h2 {
+    @include title($primary-color);
+  }
+  .carousel {
     width: 80%;
     margin: auto;
-    padding: 70px 0;
-    @include flex(column, center, center);
-    h2 {
-      @include title($primary-color);
-    }
-    .card__container {
-      width: 100%;
-      @include flex(row, center, space-between);
-      .card__project {
-        @include flex(column, center, center);
-        width: 32%;
-        .image {
-          height: 20rem;
+    .element {
+      margin: 0 10px;
+      .image {
+        height: 16rem;
+        width: 100%;
+        background-color: $primary-color;
+        img {
           width: 100%;
-          background-color: $primary-color;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+          height: 100%;
+          object-fit: cover;
         }
-        .description {
-          padding: 10px 0;
-          width: 100%;
+      }
+      .description {
+        padding: 10px 0;
+        width: 100%;
+        height: 8rem;
+        h3 {
+          font-size: 24px;
+          font-family: $roboto-bold;
+          color: $primary-color;
         }
-
-        .action {
+        p {
+          font-size: 20px;
+          font-family: $roboto-regular;
+        }
+      }
+      .action {
+        width: 100%;
+        .techno {
           width: 100%;
-          .techno {
-            width: 100%;
-            height: 50px;
+          height: 40px;
+          position: relative;
+          .over-lay {
             background-color: $primary-color;
             opacity: 0.2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
           }
-          .link {
-            margin-top: 20px;
-            width: 100%;
-            height: 50px;
-            background-color: $primary-color;
-            @include flex(row, center, center);
-            font-size: 25px;
-            color: #fff;
-            border-radius: 20px;
-            font-family: $roboto-regular;
+          .container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            @include flex(row, center, flex-start);
+            figure {
+              margin: 0 5px;
+              img {
+                width: 30px;
+              }
+            }
           }
+        }
+        .link {
+          margin-top: 20px;
+          width: 100%;
+          height: 40px;
+          background-color: #fff;
+          @include flex(row, center, center);
+          font-size: 25px;
+          color: $primary-color;
+          font-family: $roboto-bold;
+          border: 2px solid #d3e7fb;
         }
       }
     }
   }
   @media (max-width: 768px) {
-    margin: 30px 0;
-    .project__container {
-      padding: 30px 0;
+    padding: 10px 0;
+    margin: 50px 0;
+    .carousel {
       width: 90%;
-      .card__container {
-        flex-direction: column;
-        .card__project {
-          width: 100%;
-          margin-bottom: 20px;
-          .image {
-            height: 12rem;
+      .element {
+        margin: 0 2px;
+        .image {
+          height: 13rem;
+        }
+        .description {
+          height: unset;
+          h3 {
+            font-size: 20px;
           }
-          .description {
-            h3 {
-              font-size: 24px;
-              font-family: $roboto-bold;
-            }
-            p {
-              font-size: 20px;
-              font-family: $roboto-regular;
-            }
+          p {
+            display: none;
           }
-          .action {
-            .techno {
-              height: 40px;
-              margin: 0;
-            }
-            .link {
-              height: 40px;
-              border-radius: 15px;
-            }
+        }
+        .action {
+          .link {
+            font-size: 20px;
           }
         }
       }

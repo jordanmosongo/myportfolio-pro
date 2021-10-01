@@ -42,7 +42,42 @@
       }
     }
   }
+  @media (max-width: 1280px) {
+    height: 85vh;
+    .block {
+      img {
+        width: 50%;
+      }
+      .identity {
+        width: 50%;
+        h1 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
   @media (max-width: 768px) {
+    height: 47vh;
+    .block {
+      img {
+        width: 55%;
+      }
+      .identity {
+        width: 45%;
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 540px) {
     height: 65vh;
     .block {
       img {
@@ -50,13 +85,6 @@
       }
       .identity {
         display: none;
-        width: 100%;
-        h1 {
-          font-size: 47px;
-        }
-        p {
-          font-size: 30px;
-        }
       }
     }
   }

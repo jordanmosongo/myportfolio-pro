@@ -68,7 +68,7 @@
     border-top: none !important;
     box-shadow: 0 1px 0 #7e8183;
     overflow: hidden;
-    animation: appearence 1.2s ease-in-out;
+    animation: appearence 0.5s ease-in-out;
     li {
       list-style: none;
       font-size: 18px;
@@ -84,21 +84,21 @@
       }
       100% {
         height: 42vh;
-        transition: 1.2s all ease-in-out;
+        transition: 0.5s all ease-in-out;
       }
     }
   }
   .hide-mobile-menu-content {
-    animation: hide-appearence 1.2s ease-in-out;
+    animation: hide-appearence 0.5s ease-in-out;
     @keyframes hide-appearence {
       0% {
         height: 42vh;
-        transition: 1.2s all ease-in-out;
+        transition: 0.5s all ease-in-out;
       }
       100% {
         height: 0;
         padding: 0;
-        transition: 1.2s all ease-in-out;
+        transition: 0.5s all ease-in-out;
       }
     }
   }
@@ -119,6 +119,6 @@
   box-shadow: 0 1px 4px #7e8183;
   height: 10vh;
   opacity: 0.97;
-  transition: height 0.8s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 //responsive

@@ -1,8 +1,9 @@
-<div class="project">
-    <div class="project__container">
-        <h2>Projets réalisés</h2>
-        <div class="card__container">
-            <div class="card__project" *ngFor="let project of projects">
+<section>
+    <h2>Projets réalisés</h2>  
+    <div class="carousel">
+        <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let project of projects">
+            <div class="element">
                 <div class="image">
                     <img [src]="project.image" alt="">
                 </div>
@@ -11,10 +12,19 @@
                     <p>{{project.description}}</p>
                 </div>
                 <div class="action">
-                    <div class="techno"></div>                    
-                    <a href="" class="link">Accéder</a>                    
+                    <div class="techno">
+                        <div class="over-lay"></div>
+                        <div class="container">
+                            <figure *ngFor="let techno of project.technos">
+                                <img [src]="techno" alt={{project.name}}>
+                            </figure>
+                        </div>
+                    </div>                    
+                    <a [href]="project.link" class="link" target="_blanc">Accéder</a>                    
                 </div>
-            </div>                  
-        </div>
+            </div>
+        </ng-template>  
+        </owl-carousel-o>
     </div>
-</div>
+</section>
+
