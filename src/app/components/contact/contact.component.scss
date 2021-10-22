@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #f6f6f6;
   position: relative;
-  padding: 50px 0;
+  padding: 100px 0;
   .downshape {
     width: 100%;
     margin: auto;
@@ -41,14 +41,17 @@
           margin-left: 20px;
         }
       }
-      .social-links {
+      .social-icons {
         @include flex(row, center, flex-start);
         li {
           list-style: none;
-          margin-right: 20px;
-          i {
-            font-size: 35px;
-            color: $secondary-color;
+          a {
+            text-decoration: none;
+            margin-right: 15px;
+            i {
+              font-size: 30px;
+              color: $primary-color;
+            }
           }
         }
       }

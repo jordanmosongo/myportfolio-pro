@@ -15,10 +15,9 @@ export class SkillComponent implements OnInit {
     {name : 'NoSql, Sql', image :'../../../assets/images/techno/database.png'},
   ];
   softSkills : String[] = [
-    'maquettage des applications web et mobile',
-    'réalisation des interfaces web statique et dynamique',
-    'Création et gestion des bases de données',
-    'Gestion globale de la qualité d\'un logiciel (QA)',
+    "Développement frontend (maquettage des applications et leur integration)",
+    'Développement backend (bases de données objet et relationnelle, web services )',
+    'gestion globale de la qualité d’un logiciel (QA)',
     'Gestion des projets agiles avec scrum',
 
   ];

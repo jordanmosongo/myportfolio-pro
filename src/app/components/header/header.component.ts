@@ -8,8 +8,8 @@ import { Component, OnInit} from '@angular/core';
 export class HeaderComponent implements OnInit {
  items : {name : String, linkTo : String}[] = [
    {name : 'Accueil', linkTo : '/'}, 
-   {name :'Qui suis-je ?',linkTo : '#about'}, 
-   {name : 'Compétences', linkTo : '#skills'}, 
+   {name :'Apropos',linkTo : '#about'}, 
+   {name : 'Skills', linkTo : '#skills'}, 
    {name : 'Services', linkTo : '#service'}, 
    {name : 'Projets', linkTo : '#service'}, 
    {name : 'Contact', linkTo : '#contact'},
